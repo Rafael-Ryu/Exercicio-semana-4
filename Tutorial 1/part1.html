@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Making your first Phaser 3 Game - Part 1</title>
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
+    <style type="text/css">
+        body {
+            margin: 0;
+            /* Remove margens para que o jogo preencha todo o espaço disponível */
+        }
+    </style>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+        // Configuração do jogo
+        var config = {
+            type: Phaser.AUTO, // O Phaser escolhe entre WebGL ou Canvas automaticamente
+            width: 800,        // Largura do canvas
+            height: 600,       // Altura do canvas
+            scene: {
+                preload: preload, // Carrega os 'assets' antes do jogo iniciar
+                create: create,   // Cria os objetos do jogo
+                update: update    // Atualiza a lógica do jogo a cada frame
+            }
+        };
+
+        // Cria uma nova instância do jogo
+        var game = new Phaser.Game(config);
+
+        // Função para pré-carregar os 'assets'
+        function preload() {
+        }
+
+        // Função para criar objetos, personagens e configurar a cena inicial
+        function create() {
+        }
+
+        // Função para atualizar a lógica do jogo
+        function update() {
+        }
+
+    </script>
+
+</body>
+
+</html>
